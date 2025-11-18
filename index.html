@@ -7,528 +7,310 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
   
     <style>
-    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-    .w3-row-padding img {margin-bottom: 12px}
-    .bgimg {
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-image: url('images/index-main-img.jpg');
-      width: 100%;
-    }
-
-    a{
-    text-decoration:none;
-    }
-
-    .w3-jumbo {
-    font-size: 51px!important;
-}
-
-
-.w3-button{
-  margin-top: 50px !important
-  ;
-}
-
-.w3-wide {
-    letter-spacing: 4px;
-    margin-top: 20px;
-    margin-bottom: 5px;
-}
-
-hr {
-    margin: 1rem 0;
-    color: inherit;
-    border: 0;
-    border-top: 1px solid grey;
-    opacity: .25;
-}
-
-h3, h2, .w3-text-black{
-color:black !important;
-}
-
-.row > .column {
-  padding: 0 8px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.column {
-  float: left;
-  width: 25%;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: black;
-}
-
-/* Modal Content */
-.modal-content {
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  width: 90%;
-  max-width: 1200px;
-}
-
-/* The Close Button */
-.close {
-  color: white;
-  position: absolute;
-  position:fixed;
-  top: 10px;
-  right: 35px;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #999;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.mySlides {
-  display: none;
-}
-
-.cursor {
-  cursor: pointer;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-img {
-  margin-bottom: -4px;
-}
-
-.caption-container {
-  text-align: center;
-  background-color: black;
-  padding: 2px 16px;
-  color: white;
-}
-
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
-
-img.hover-shadow {
-  transition: 0.3s;
-}
-
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-
-.contact-section{
-  margin-top:30px;
-}
-
-
-.fa{
-  position: relative;
-  top: 7px;
-}
+      /* --- TYPOGRAPHY AND GENERAL STYLES --- */
+      body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       
-      .portfolio-span{
-        font-size:16px;
+      .w3-row-padding img {margin-bottom: 12px}
+      
+      .w3-jumbo {
+          /* Increased font size for modern impact */
+          font-size: 64px!important; 
+          font-weight: 800;
       }
+      
+      .w3-button {
+          /* Increased vertical spacing */
+          margin-top: 30px !important; 
+          padding: 12px 30px !important; /* Larger padding for a bolder button */
+          transition: background-color 0.3s;
+      }
+
+      /* Hover effect for the resume button */
+      .w3-button:hover {
+          background-color: #ccc !important; 
+      }
+      
+      .w3-wide {
+          letter-spacing: 2px; /* Subtly reduced for readability */
+          margin-top: 25px; 
+          margin-bottom: 5px;
+          font-weight: 600; /* Added weight to skill titles */
+      }
+      
+      hr {
+          margin: 1.5rem 0; /* Increased margin for better separation */
+          border-top: 2px solid #eee; /* Lighter, thicker line */
+          opacity: 1; /* Made the opacity 1 to see the line better */
+      }
+      
+      h3, h2, .w3-text-black {
+          /* Ensure headers are visible against light backgrounds */
+          color: #333 !important; 
+          font-weight: 700;
+      }
+
+      /* Subtle color for portfolio section titles */
+      .portfolio-title-span {
+          color: #2196F3; /* W3.CSS Blue */
+          font-weight: 500;
+      }
+
+      /* --- GRID AND IMAGE STYLES (Kept mostly as is) --- */
+      .row > .column {
+          padding: 0 8px;
+      }
+      .row:after {
+          content: "";
+          display: table;
+          clear: both;
+      }
+      .column {
+          float: left;
+          width: 25%;
+      }
+      .hover-shadow:hover {
+          /* Enhanced shadow on hover for better depth */
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+      }
+      
+      /* --- CONTACT ICONS --- */
+      .fa{
+          position: relative;
+          top: 7px;
+          color: #2196F3; /* Made icons blue for visual accent */
+      }
+      .bgimg {
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-image: url('images/index-main-img.jpg');
+          width: 100%;
+      }
+      a{ text-decoration:none; }
+      .contact-section{ margin-top:30px; }
+      .portfolio-span{ font-size:16px; }
+      
+      /* You can remove the modal styles since the modal is commented out */
+      /* ... (All modal, close, prev/next, and slide styles omitted for brevity) ... */
     </style>
   </head>
 <body>
 
-
-
-<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
-<!-- <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
-  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
-    <i class="fa fa-remove"></i>
-  </a>
-  <div class="w3-bar-block w3-center">
-    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Portfolio</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
-  </div>
-</nav> -->
-
-<!-- Page Content -->
 <div class="w3-main w3-padding-large">
 
-  <!-- Menu icon to open sidebar -->
-  <!-- <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span> -->
-
-  <!-- Header -->
-  <header class="w3-container container w3-center" style="padding:60px 16px" id="home">
+  <header class="w3-container w3-light-grey w3-center" style="padding:60px 16px; border-radius: 8px;" id="home">
     <h1 class="w3-jumbo"><b>Prashanth</b></h1>
-    <p>UI UX DESIGNER / IOS APP DEVELOPER</p>
-    <div class="row" style="margin-top:20px">
-      <div class="col-lg-6">
-    <img src="passport_size_photo.png" class="w3-image  w3-round">
+    <p class="w3-large">UI/UX DESIGNER | iOS APP DEVELOPER</p>
+    <div class="row" style="margin-top:30px">
+      <div class="col-lg-6 w3-padding-large">
+        <img src="passport_size_photo.png" class="w3-image w3-round" style="max-width: 200px; height: auto;">
       </div>
-      <div class="col-lg-6" style="text-align:left;margin-top:10px">
-    <div class="container">
-      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>Coimbatore, India</p>
-      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +91 8667233746</p>
-      <p style="color:black"><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> <span>Email: </span><a href="mailto:prashanthgk600@gmail.com">prashanthgk600@gmail.com</a></p>
-    </div>
+      <div class="col-lg-6" style="text-align:left;margin-top:20px">
+        <div class="container">
+          <p><i class="fa fa-map-marker fa-fw w3-margin-right"></i>Coimbatore, India</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right"></i> Phone: +91 8667233746</p>
+          <p style="color:black"><i class="fa fa-envelope fa-fw w3-margin-right"> </i> <span>Email: </span><a href="mailto:prashanthgk600@gmail.com">prashanthgk600@gmail.com</a></p>
+        </div>
       </div>
     </div>
     <div>
-    <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
-     <a href="https://github.com/prashanthgk007/portfolio.io/blob/e508db3b5bf429282890ddec8ba99765512c402f/prashanth_CV.pdf" target="_blank"> My Resume</a>
-    </button>
+      <button class="w3-button w3-dark-grey w3-hover-light-grey w3-padding-large w3-margin-top" style="color:white; font-weight: 600;">
+        <a href="https://github.com/prashanthgk007/portfolio.io/blob/main/Prashanth_CV.pdf" target="_blank" style="color:white;"> My Resume</a>
+      </button>
     </div>
   </header>
 
-<div class="container" style="padding:0px 16px 60px 16px">
+  <div class="container" style="padding:40px 16px 60px 16px">
     <h3 class="">Technical & Software Skills</h3>
     <hr class="w3-opacity">
 
     <div class="w3-row">
-        <div class="w3-half w3-padding-small">
-            <p class="w3-wide">Flutter</p>
-            <div class="w3-light-grey">
-                <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:91%">95%</div>
-            </div>
+      <div class="w3-half w3-padding-small">
+        <p class="w3-wide">Flutter</p>
+        <div class="w3-light-grey">
+          <div class="w3-container w3-center w3-padding-small w3-blue" style="width:91%">95%</div>
         </div>
-              <div class="w3-half w3-padding-small">
-            <p class="w3-wide">Swift UI</p>
-            <div class="w3-light-grey">
-                <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:83%">95%</div>
-            </div>
+      </div>
+      <div class="w3-half w3-padding-small">
+        <p class="w3-wide">Swift UI</p>
+        <div class="w3-light-grey">
+          <div class="w3-container w3-center w3-padding-small w3-blue" style="width:83%">95%</div>
         </div>
-    </div>
-
-      <div class="w3-row">
-        <div class="w3-half w3-padding-small">
-            <p class="w3-wide">Swift</p>
-            <div class="w3-light-grey">
-                <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">87%</div>
-            </div>
-        </div>
-        <div class="w3-half w3-padding-small">
-            <p class="w3-wide">Xcode</p>
-            <div class="w3-light-grey">
-                <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:77%">88%</div>
-            </div>
-        </div>
-    </div>
-
-        <div class="w3-row">
-        <div class="w3-half w3-padding-small">
-            <p class="w3-wide">Push Notification</p>
-            <div class="w3-light-grey">
-                <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">90%</div>
-            </div>
-        </div>
-        <div class="w3-half w3-padding-small">
-            <p class="w3-wide">Firebase</p>
-            <div class="w3-light-grey">
-                <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:77%">75%</div>
-            </div>
-        </div>
+      </div>
     </div>
 
     <div class="w3-row">
-              <div class="w3-half w3-padding-small">
-            <p class="w3-wide">Figma</p>
-            <div class="w3-light-grey">
-                <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:91%">91%</div>
-            </div>
+      <div class="w3-half w3-padding-small">
+        <p class="w3-wide">Swift</p>
+        <div class="w3-light-grey">
+          <div class="w3-container w3-center w3-padding-small w3-blue" style="width:80%">87%</div>
         </div>
-        <div class="w3-half w3-padding-small">
-            <p class="w3-wide">Photoshop</p>
-            <div class="w3-light-grey">
-                <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:85%">85%</div>
-            </div>
+      </div>
+      <div class="w3-half w3-padding-small">
+        <p class="w3-wide">Xcode</p>
+        <div class="w3-light-grey">
+          <div class="w3-container w3-center w3-padding-small w3-blue" style="width:77%">88%</div>
         </div>
+      </div>
     </div>
 
     <div class="w3-row">
-
-        <div class="w3-half w3-padding-small">
-            <p class="w3-wide">Wordpress</p>
-            <div class="w3-light-grey">
-                <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:90%">90%</div>
-            </div>
+      <div class="w3-half w3-padding-small">
+        <p class="w3-wide">Push Notification</p>
+        <div class="w3-light-grey">
+          <div class="w3-container w3-center w3-padding-small w3-blue" style="width:80%">90%</div>
         </div>
+      </div>
+      <div class="w3-half w3-padding-small">
+        <p class="w3-wide">Firebase</p>
+        <div class="w3-light-grey">
+          <div class="w3-container w3-center w3-padding-small w3-blue" style="width:77%">75%</div>
+        </div>
+      </div>
     </div>
-    
+
     <div class="w3-row">
-        <div class="w3-half w3-padding-small">
-            <p class="w3-wide">Web Development</p>
-            <div class="w3-light-grey">
-                <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:79%">79%</div>
-            </div>
+      <div class="w3-half w3-padding-small">
+        <p class="w3-wide">Figma</p>
+        <div class="w3-light-grey">
+          <div class="w3-container w3-center w3-padding-small w3-blue" style="width:91%">91%</div>
         </div>
-        <div class="w3-half w3-padding-small">
-            <p class="w3-wide">Web Design</p>
-            <div class="w3-light-grey">
-                <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:85%">85%</div>
-            </div>
+      </div>
+      <div class="w3-half w3-padding-small">
+        <p class="w3-wide">Photoshop</p>
+        <div class="w3-light-grey">
+          <div class="w3-container w3-center w3-padding-small w3-blue" style="width:85%">85%</div>
         </div>
+      </div>
     </div>
-</div>
-    <br>
 
+    <div class="w3-row">
+      <div class="w3-half w3-padding-small">
+        <p class="w3-wide">Wordpress</p>
+        <div class="w3-light-grey">
+          <div class="w3-container w3-center w3-padding-small w3-blue" style="width:90%">90%</div>
+        </div>
+      </div>
+      <div class="w3-half w3-padding-small">
+          <p class="w3-wide">&nbsp;</p> 
+          <div class="w3-light-grey" style="height: 18px;"></div>
+      </div>
+    </div>
+
+    <div class="w3-row">
+      <div class="w3-half w3-padding-small">
+        <p class="w3-wide">Web Development</p>
+        <div class="w3-light-grey">
+          <div class="w3-container w3-center w3-padding-small w3-blue" style="width:79%">79%</div>
+        </div>
+      </div>
+      <div class="w3-half w3-padding-small">
+        <p class="w3-wide">Web Design</p>
+        <div class="w3-light-grey">
+          <div class="w3-container w3-center w3-padding-small w3-blue" style="width:85%">85%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
 
 
   <section style="padding:0px 16px 60px 16px">
-<div class="container" >
-  <h3 class="" id="portfolio">My Portfolio <span class="portfolio-span">( Figma UI Ux Designs )</span></h3>
-   <hr class="w3-opacity">
-</div>
-  <!-- Portfolio Section -->
-  <div class="container">
-  <div class="row">
-    
-     <div class="column">
-  <a href="Food_Concept_Mockup.png" target="blank">  <img src="Food_Concept_Mockup.png" alt="Food_Concept_Mockup" style="width:100%"  class="hover-shadow cursor">
-  </a>
-  </div>
-
-         <div class="column">
-  <a href="Medical_Mockup.png" target="blank">  <img src="Medical_Mockup.png" alt="Medical_Mockup" style="width:100%"  class="hover-shadow cursor">
-  </a>
-  </div>
-
-         <div class="column">
-  <a href="Shoe_Rack_Mockup.png" target="blank">  <img src="Shoe_Rack_Mockup.png" alt="Shoe_Rack_Mockup" style="width:100%"  class="hover-shadow cursor">
-  </a>
-  </div>
-       
-    
-</div>
-  </div>
-</section>
-
-    <section style="padding:0px 16px 60px 16px">
-<div class="container" >
-  <h3 class="" id="portfolio">My Portfolio <span class="portfolio-span">( Figma Poster Designs )</span></h3>
-   <hr class="w3-opacity">
-</div>
-  <!-- Portfolio Section -->
-  <div class="container">
-  <div class="row">
-    
-     <div class="column">
-  <a href="Instagram story ADS.png" target="blank">  <img src="Instagram story ADS.png" alt="Food_Concept_Mockup" style="width:100%"  class="hover-shadow cursor">
-  </a>
-  </div>
-
-
-       
-    
-</div>
-  </div>
-</section>
-
-
-<section style="padding:0px 16px 60px 16px">
-<div class="container" >
-  <h3 class="" id="portfolio">My Portfolio <span class="portfolio-span">( Wordpress, HTML Designs )</span></h3>
-   <hr class="w3-opacity">
-</div>
-  <!-- Portfolio Section -->
-  <div class="container">
-  <div class="row">
-    
-     <div class="column">
-   <a href="https://nanbanchola.com/" target="blank"> <img src="webpage-2.png" alt="nanban-chola" style="width:100%"  class="hover-shadow cursor"> </a>
-  </div>
-
-         <div class="column">
-    <a href="http://demo.homepagedesign.in/theory11/index.html" target="blank"> <img src="webpage-6.png" alt="theory 11" style="width:100%"  class="hover-shadow cursor"> </a>
-  </div>
-    
-         <div class="column">
-    <a href="http://demo.homepagedesign.in/eatopia/index.html" target="blank"> <img src="webpage-8.png" alt="eatopia" style="width:100%"  class="hover-shadow cursor"> </a>
-  </div>
-    
-      <div class="column">
-    <a href="https://dkmmhomoeocollege.com/" target="blank"> <img src="webpage-1.png" alt="dkmm-college" style="width:100%"  class="hover-shadow cursor"> </a>
-  </div>
-    
-    
-  <div class="column">
-    <a href="https://mywebhost.in/" target="blank"> <img src="webpage-3.png" alt="mywebhost" style="width:100%"  class="hover-shadow cursor"> </a>
-  </div>
-    
-  <div class="column">
-   <a href="https://arcotmotorservices.com/" target="blank"> <img src="webpage-4.png" alt="arcotmotorservices" style="width:100%"  class="hover-shadow cursor"> </a>
-  </div>
-    
-  <div class="column" style="margin-top:20px">
-   <a href="https://safaris.co.bw/" target="blank"> <img src="webpage-5.png" alt="safaris" style="width:100%"  class="hover-shadow cursor"> </a>
-  </div>
-    
-    <div class="column" style="margin-top:20px">
-   <a href="https://jvgroups.in/" target="blank"> <img src="webpage-7.png" alt="jv-groups" style="width:100%"  class="hover-shadow cursor"> </a>
-  </div>
-    
- <div class="column">
-    <a href="webpage-9.png" target="blank"> <img src="webpage-9.png" alt="theory 11" style="width:100%"  class="hover-shadow cursor"> </a>
-  </div>
-    
-</div>
-  </div>
-</section>
-
-<!-- <div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-  <div class="modal-content">
-
-    <div class="mySlides">
-      <div class="numbertext">1 / 4</div>
-      <a href="https://dkmmhomoeocollege.com/"><img src="images/portfolio-1.jpg" style="width:100%"></a>
+    <div class="container">
+      <h3 class="" id="portfolio">My Portfolio <span class="portfolio-span portfolio-title-span">( Figma UI UX Designs )</span></h3>
+      <hr class="w3-opacity">
     </div>
-
-    <div class="mySlides">
-      <div class="numbertext">2 / 4</div>
-       <a href="https://https://mywebhost.in/"> <img src="images/portfolio-2.jpg" style="width:100%"> </a>
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <a href="Food_Concept_Mockup.png" target="blank">  <img src="Food_Concept_Mockup.png" alt="Food_Concept_Mockup" style="width:100%" class="hover-shadow cursor">
+          </a>
+        </div>
+        <div class="column">
+          <a href="Medical_Mockup.png" target="blank">  <img src="Medical_Mockup.png" alt="Medical_Mockup" style="width:100%" class="hover-shadow cursor">
+          </a>
+        </div>
+        <div class="column">
+          <a href="Shoe_Rack_Mockup.png" target="blank">  <img src="Shoe_Rack_Mockup.png" alt="Shoe_Rack_Mockup" style="width:100%" class="hover-shadow cursor">
+          </a>
+        </div>
+        <div class="column">
+           </div>
+      </div>
     </div>
+  </section>
 
-    <div class="mySlides">
-      <div class="numbertext">3 / 4</div>
-      <a href="https://magicot.in/"> <img src="images/portfolio-3.jpg" style="width:100%"> </a>
+  <section style="padding:0px 16px 60px 16px">
+    <div class="container">
+      <h3 class="" id="portfolio">My Portfolio <span class="portfolio-span portfolio-title-span">( Figma Poster Designs )</span></h3>
+      <hr class="w3-opacity">
     </div>
-    
-    <div class="mySlides">
-      <div class="numbertext">4 / 4</div>
-      <a href="https://www.dvoltautomation.com/"> <img src="images/portfolio-4.jpg" style="width:100%"> </a>
+    <div class="container">
+      <div class="row">
+        <div class="column" style="width: 33.33%;"> 
+          <a href="Instagram story ADS.png" target="blank">  <img src="Instagram story ADS.png" alt="Food_Concept_Mockup" style="width:100%" class="hover-shadow cursor">
+          </a>
+        </div>
+      </div>
     </div>
+  </section>
 
-     <div class="mySlides">
-      <div class="numbertext">5 / 4</div>
-      <a href="https://ghsskpm.in/"> <img src="images/portfolio-2.jpg" style="width:100%"> </a>
+
+  <section style="padding:0px 16px 60px 16px">
+    <div class="container">
+      <h3 class="" id="portfolio">My Portfolio <span class="portfolio-span portfolio-title-span">( Wordpress, HTML Designs )</span></h3>
+      <hr class="w3-opacity">
     </div>
-    
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    <div class="caption-container">
-      <p id="caption"></p>
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <a href="https://nanbanchola.com/" target="blank"> <img src="webpage-2.png" alt="nanban-chola" style="width:100%" class="hover-shadow cursor"> </a>
+        </div>
+        <div class="column">
+          <a href="http://demo.homepagedesign.in/theory11/index.html" target="blank"> <img src="webpage-6.png" alt="theory 11" style="width:100%" class="hover-shadow cursor"> </a>
+        </div>
+        <div class="column">
+          <a href="http://demo.homepagedesign.in/eatopia/index.html" target="blank"> <img src="webpage-8.png" alt="eatopia" style="width:100%" class="hover-shadow cursor"> </a>
+        </div>
+        <div class="column">
+          <a href="https://dkmmhomoeocollege.com/" target="blank"> <img src="webpage-1.png" alt="dkmm-college" style="width:100%" class="hover-shadow cursor"> </a>
+        </div>
+        <div class="column" style="margin-top:20px">
+          <a href="https://mywebhost.in/" target="blank"> <img src="webpage-3.png" alt="mywebhost" style="width:100%" class="hover-shadow cursor"> </a>
+        </div>
+        <div class="column" style="margin-top:20px">
+          <a href="https://arcotmotorservices.com/" target="blank"> <img src="webpage-4.png" alt="arcotmotorservices" style="width:100%" class="hover-shadow cursor"> </a>
+        </div>
+        <div class="column" style="margin-top:20px">
+          <a href="https://safaris.co.bw/" target="blank"> <img src="webpage-5.png" alt="safaris" style="width:100%" class="hover-shadow cursor"> </a>
+        </div>
+        <div class="column" style="margin-top:20px">
+          <a href="https://jvgroups.in/" target="blank"> <img src="webpage-7.png" alt="jv-groups" style="width:100%" class="hover-shadow cursor"> </a>
+        </div>
+        <div class="column" style="margin-top:20px">
+          <a href="webpage-9.png" target="blank"> <img src="webpage-9.png" alt="theory 11" style="width:100%" class="hover-shadow cursor"> </a>
+        </div>
+        </div>
     </div>
+  </section>
 
-</div>
-</div> -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-// Open and close sidebar
-function openNav() {
-  document.getElementById("mySidebar").style.width = "60%";
-  document.getElementById("mySidebar").style.display = "block";
-}
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Open and close sidebar (keeping the functions in case the sidebar is used later)
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "60%";
+      document.getElementById("mySidebar").style.display = "block";
+    }
 
-function closeNav() {
-  document.getElementById("mySidebar").style.display = "none";
-}
-</script>
+    function closeNav() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+  </script>
 
-
-<script>
-function openModal() {
-  document.getElementById("myModal").style.display = "block";
-}
-
-function closeModal() {
-  document.getElementById("myModal").style.display = "none";
-}
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-</script>
+  </div>
 
 </body>
 </html>
